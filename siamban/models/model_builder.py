@@ -14,7 +14,7 @@ from siamban.models.loss import select_cross_entropy_loss, select_iou_loss, Poly
 from siamban.models.backbone import get_backbone
 from siamban.models.head import get_ban_head
 from siamban.models.neck import get_neck
-
+from siamban.models.eca_module import eca_layer
 
 class ModelBuilder(nn.Module):
     def __init__(self):
@@ -33,7 +33,7 @@ class ModelBuilder(nn.Module):
         if cfg.BAN.BAN:
             self.head = get_ban_head(cfg.BAN.TYPE,
                                      **cfg.BAN.KWARGS)
-
+        self.eca = eca_layer(k_size=3)
 
     def template(self, z):
         zf = self.backbone(z)
@@ -68,6 +68,8 @@ class ModelBuilder(nn.Module):
         # get feature
         zf = self.backbone(template)
         xf = self.backbone(search)  # list, layer[3] + layer[4] + layer[5]
+
+        xf = self.eca(xf, zf)  # cross-attention TGFAT
 
         if cfg.ADJUST.ADJUST:
             zf = self.neck(zf)
