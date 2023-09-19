@@ -1,4 +1,4 @@
-# [Chinese Journal of Aeronautics 2023] Template-guided frequency attention and adaptive cross-entropy loss for UAV visual tracking
+# [CJA 2023] Template-guided frequency attention and adaptive cross-entropy loss for UAV visual tracking
 
 This is an official pytorch implementation of the 2023 Chinese Journal of Aeronautics paper: 
 ```
