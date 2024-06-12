@@ -6,7 +6,7 @@ Template-guided frequency attention and adaptive cross-entropy loss for UAV visu
 (accepted by Chinese Journal of Aeronautics, DOI: https://doi.org/10.1016/j.cja.2023.03.048)
 ```
 
-![image](xxx.png)
+![image](https://github.com/xyl-507/TGFAT/blob/main/figs/fig.jpg)
 
 The paper can be downloaded from [Chinese Journal of Aeronautics](https://doi.org/10.1016/j.cja.2023.03.048)
 
