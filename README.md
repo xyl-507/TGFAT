@@ -83,3 +83,23 @@ The code based on the [PySOT](https://github.com/STVIR/pysot) , [SiamBAN](https:
 [FcaNet](https://ieeexplore.ieee.org/document/9710319) and [SiamCAN](https://openreview.net/forum?id=UQz4_jo70Ci)
 
 We would like to express our sincere thanks to the contributors.
+
+### Citation:
+If you find this work useful for your research, please cite the following papers:
+```
+@article{XUE2023299,
+title = {Template-guided frequency attention and adaptive cross-entropy loss for UAV visual tracking},
+journal = {Chinese Journal of Aeronautics},
+volume = {36},
+number = {9},
+pages = {299-312},
+year = {2023},
+issn = {1000-9361},
+doi = {https://doi.org/10.1016/j.cja.2023.03.048},
+url = {https://www.sciencedirect.com/science/article/pii/S1000936123001097},
+author = {Yuanliang XUE and Guodong JIN and Tao SHEN and Lining TAN and Lianfeng WANG},
+keywords = {Object tracking, Unmanned Aerial Vehicle (UAV), Deep learning, Siamese neural network},
+abstract = {This paper addresses the problem of visual object tracking for Unmanned Aerial Vehicles (UAVs). Most Siamese trackers are used to regard object tracking as classification and regression problems. However, it is difficult for these trackers to accurately classify in the face of similar objects, background clutters and other common challenges in UAV scenes. So, a reliable classifier is the key to improving UAV tracking performance. In this paper, a simple yet efficient tracker following the basic architecture of the Siamese neural network is proposed, which improves the classification ability from three stages. First, the frequency channel attention module is introduced to enhance the target features via frequency domain learning. Second, a template-guided attention module is designed to promote information exchange between the template branch and the search branch, which can get reliable classification response maps. Third, adaptive cross-entropy loss is proposed to make the tracker focus on hard samples that contribute more to the training process, solving the data imbalance between positive and negative samples. To evaluate the performance of the proposed tracker, comprehensive experiments are conducted on two challenging aerial datasets, including UAV123 and UAVDT. Experimental results demonstrate that the proposed tracker achieves favorable tracking performances in aerial benchmarks beyond 41 frames/s. We conducted experiments in real UAV scenes to further verify the efficiency of our tracker in the real world.}
+}
+```
+If you have any questions about this work, please contact with me via xyl_507@outlook.com
