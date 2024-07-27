@@ -14,14 +14,11 @@ The models and raw results can be downloaded from [BaiduYun](https://pan.baidu.c
 
 ### UAV Tracking
 
-| Datasets | TGFAT_r50_l234|
+| Datasets | TGFAT|
 | :--------------------: | :----------------: |
 | UAV123(Suc./Pre.) | 0.617/0.827|
 | UAVDT(Suc./Pre.) | 0.606/0.844|
 
-Note:
-
--  `r50_lxyz` denotes the outputs of stage x, y, and z in [ResNet-50](https://arxiv.org/abs/1512.03385).
 
 ## Installation
 
@@ -29,7 +26,7 @@ Please find installation instructions in [`INSTALL.md`](INSTALL.md).
 
 ## Quick Start: Using TGFAT
 
-### Add SmallTrack to your PYTHONPATH
+### Add TGFAT to your PYTHONPATH
 
 ```bash
 export PYTHONPATH=/path/to/TGFAT:$PYTHONPATH
@@ -40,8 +37,8 @@ export PYTHONPATH=/path/to/TGFAT:$PYTHONPATH
 
 ```bash
 python tools/demo.py \
-    --config experiments/siamban_mobilev2_l234/config.yaml \
-    --snapshot experiments/siamban_mobilev2_l234/MobileTrack.pth
+    --config experiments/siamban_r50_l234/config.yaml \
+    --snapshot experiments/siamban_r50_l234/TGFAT.pth
     --video demo/bag.avi
 ```
 
@@ -52,7 +49,7 @@ Download datasets and put them into `testing_dataset` directory. Jsons of common
 ### Test tracker
 
 ```bash
-cd experiments/siamban_mobilev2_l234
+cd experiments/siamban_r50_l234
 python -u ../../tools/test.py 	\
 	--snapshot TGFAT.pth 	\ # model path
 	--dataset UAV123 	\ # dataset name
@@ -63,7 +60,7 @@ The testing results will in the current directory(results/dataset/model_name/)
 
 ### Eval tracker
 
-assume still in experiments/siamban_mobilev2_l234
+assume still in experiments/siamban_r50_l234
 
 ``` bash
 python ../../tools/eval.py 	 \
