@@ -10,6 +10,8 @@ Template-guided frequency attention and adaptive cross-entropy loss for UAV visu
 
 The paper can be downloaded from [Chinese Journal of Aeronautics](https://doi.org/10.1016/j.cja.2023.03.048)
 
+The models and raw results can be downloaded from [GitHub](https://github.com/xyl-507/TGFAT/releases/tag/model). 
+
 The models and raw results can be downloaded from [BaiduYun](https://pan.baidu.com/s/1lfrFIgevYlfUWXP8lz9kMw?pwd=1234). 
 
 ### UAV Tracking
