@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from siamban.core.xcorr import xcorr_fast, xcorr_depthwise
-from siamban.models.backbone.wh_eca import CoordAtt
+# from siamban.models.backbone.wh_eca import CoordAtt
 
 
 class BAN(nn.Module):
